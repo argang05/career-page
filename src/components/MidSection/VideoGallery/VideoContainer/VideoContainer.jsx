@@ -3,7 +3,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './videocontainer.css';
 
-const VideoContainer = ({ key , video, onPlay }) => {
+const VideoContainer = ({ video, onPlay }) => {
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
 
