@@ -1,0 +1,41 @@
+.vacancyContainer{
+    height: 300px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 5px;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .textSection{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 20px;
+        h1{
+            font-weight: 700;
+            color: #000249;
+        }
+        p{
+            font-size: 16px;
+        }
+        span{
+            font-weight: bold;
+            font-size: 14px;
+        }
+    }
+    button{
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;  
+        background-color: #f6470daf; 
+        cursor: pointer;  
+        &:hover{
+            background-color: #F6490D;
+        }   
+    }
+}

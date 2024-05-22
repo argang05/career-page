@@ -1,0 +1,64 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px 50px 0 50px;
+  gap: 15px;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.heading.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.heading .mark {
+  height: 15px;
+  width: 50px;
+  background-color: #F6490D;
+}
+
+.heading h1 {
+  color: #000249;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.vacancy {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 400px;
+  padding: 0px 40px;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.vacancy.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vacancy::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width : 480px) {
+    .heading{
+        margin: 40px 40px 0px 40px;
+        h1{
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .vacancy{
+        padding: 0px 30px;
+    }
+}

@@ -1,0 +1,50 @@
+.headSection {
+  text-align: center;
+}
+
+.hero-section {
+  position: relative;
+  height: 320px;
+  background-image: url('../../assets/career-bg.png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hero-section.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00035ac8; /* Background tint */
+  z-index: 1;
+}
+
+.hero-section h2 {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hero-section.loaded h2 {
+  opacity: 1;
+  transform: translateY(0);
+}
