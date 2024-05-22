@@ -64,6 +64,10 @@
     height: 80px;
     width: 80px;
     font-size: 60px;
-    padding: 0 0 2px 7px;
+    /* padding: 0 0 1px 7px; */
+
+    .ri-play-large-fill{
+      margin-bottom: 3.5px;
+    }
   }
 }

@@ -2,8 +2,9 @@
 /* eslint-disable no-unused-vars */
 import React, { useRef, useEffect, useState } from 'react';
 import './videocontainer.css';
+import 'remixicon/fonts/remixicon.css'
 
-const VideoContainer = ({ key , video, onPlay }) => {
+const VideoContainer = ({ video, onPlay }) => {
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
 
@@ -37,7 +38,7 @@ const VideoContainer = ({ key , video, onPlay }) => {
     >
             <img src={video?.thumbnail} alt={video?.name} />
       <div className="play-icon">
-        <p>&#9658;</p>
+        <i className="ri-play-large-fill"></i>
             </div>
             <div className="info">
                 <h3>{video?.name}</h3>
